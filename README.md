@@ -278,7 +278,7 @@ Observações:
 * A variável global ```block``` refere-se ao bloco no qual será processada a transação. Obtemos então o timestamp da transação através dele.
 
 #### Criando a quinta função: Recuperar os dados de transporte
-
+```
 // Retrieving an wood lot
     function getLotShipment(uint lotId, uint shipmentId)
         validLot(lotId)
@@ -290,7 +290,7 @@ Observações:
         LotShipment memory lotShipment = lot.shipment[shipmentId];
         return (lotShipment.description, lotShipment.dateTime, lotShipment.destiny, lotShipment.status);
     }
-
+```
 ## Compilando e publicando os contratos
 
 Agora que já desenvolvemos o contrato, os próximos passos são compilar e publicar na nossa rede local.
