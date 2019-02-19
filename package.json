@@ -1,0 +1,51 @@
+{
+  "name": "react-tutorial",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@date-io/moment": "^1.1.0",
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
+    "bignumber.js": "^8.0.2",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.2",
+    "chartist": "^0.11.0",
+    "classnames": "^2.2.6",
+    "ganache-cli": "^6.1.0",
+    "history": "^4.7.2",
+    "material-ui-pickers": "^2.2.1",
+    "moment": "^2.24.0",
+    "perfect-scrollbar": "^1.4.0",
+    "prettier": "^1.16.4",
+    "prop-types": "^15.7.2",
+    "qrcode.react": "^0.9.2",
+    "react": "^16.8.1",
+    "react-chartist": "^0.13.3",
+    "react-dom": "^16.8.2",
+    "react-responsive-modal": "^3.6.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.5",
+    "react-vertical-timeline-component": "^2.3.1",
+    "truffle": "5.0.4",
+    "uuid": "^3.3.2",
+    "web3": "^1.0.0-beta.46"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build-package-css": "cp src/assets/css/material-dashboard-react.css dist/material-dashboard-react.css",
+    "build-package": "npm run build-package-css && babel src --out-dir dist"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

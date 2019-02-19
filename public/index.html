@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>WooD - Rastreamentos</title>
+    <script src="%PUBLIC_URL%/Web3.js"></script>
+    <script>
+      window.addEventListener('load', function () {
+        if (typeof web3 !== 'undefined') {        
+          window.web3 = new Web3(window.web3.currentProvider);
+        } else {
+          window.web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
+        }
+
+        window.web3.eth.getAccounts(function(error, accounts) {
+          if(!error && accounts.length > 0) {
+            window.acc = accounts[0]        
+          }
+        });  
+      });
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
